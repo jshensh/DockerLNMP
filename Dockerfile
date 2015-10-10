@@ -13,4 +13,4 @@ RUN cd ~ && wget http://hk43.server.idc.wiki/lnmp1.2-full.tar.gz?t=`date +%s` -O
 ADD run.sh /run.sh
 RUN chmod 755 /run.sh
 
-CMD ["/root/run.sh"]
+CMD ["/run.sh"]
