@@ -11,5 +11,6 @@ EXPOSE 80
 
 RUN cd ~ && wget http://hk43.server.idc.wiki/lnmp1.2-full.tar.gz?t=`date +%s` -O lnmp1.2-full.tar.gz
 ADD run.sh /root/run.sh
+RUN chmod 755 /root/run.sh
 
 CMD ["/root/run.sh"]
